@@ -1,4 +1,4 @@
-# DRIVE Framework Workshop — Dashboard
+# DRIVE Framework Workshop
 
 Webpage built to support a live academic workshop on AI-assisted learning and assessment.
 
