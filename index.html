@@ -94,176 +94,127 @@
 
     <hr class="border-slate-200" />
 
-    <!-- ── 3. ACTIVITY 1: VE ── -->
-    <section>
-      <!-- Label row -->
-      <div class="flex items-center gap-3 mb-1">
-        <span class="badge">VE</span>
-        <h2 class="text-base font-bold text-slate-900">Activity 1 — What the prompter knows</h2>
-      </div>
-      <p class="text-xs text-slate-400 mb-1 pl-px">Visible Expertise</p>
-
-      <!-- Objective -->
-      <div class="bg-cobalt-tint border border-cobalt-soft rounded-lg px-5 py-3.5 mb-6">
-        <p class="text-sm text-slate-700 leading-relaxed">
-          <strong class="text-cobalt">Objective:</strong> Identify prompter expertise by looking at knowledge injected into prompts.
-          Create <strong class="text-slate-900">two separate chat threads</strong> in your chosen chatbot.
-        </p>
-      </div>
-
-      <!-- Thread grid -->
-      <div class="grid md:grid-cols-2 gap-4 mb-5">
-
-        <!-- Thread A -->
-        <div class="bg-white border border-slate-200 rounded-lg overflow-hidden">
-          <div class="bg-slate-100 px-5 py-3 flex items-center gap-2.5">
-            <span class="w-2 h-2 rounded-full bg-slate-400 shrink-0"></span>
-            <p class="text-xs font-bold uppercase tracking-widest text-slate-500">Thread A — Novice</p>
-          </div>
-          <div class="p-5 space-y-3 text-sm text-slate-600">
-            <p>Pick a topic you <strong class="text-slate-800">know nothing about</strong>.</p>
-            <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Use this prompt exactly:</p>
-            <p class="bg-slate-50 border border-slate-200 rounded-md px-3 py-2.5 font-mono text-xs text-slate-600 leading-relaxed">
-              "Create a 4-week seminar syllabus on [Topic]."
-            </p>
-            <p class="text-xs text-slate-400 leading-relaxed pt-1">
-              Submit as-is. No framing. No constraints. Accept what the AI returns.
-            </p>
-          </div>
-        </div>
-
-        <!-- Thread B -->
-        <div class="bg-white border rounded-lg overflow-hidden border-cobalt-soft">
-          <div class="px-5 py-3 flex items-center gap-2.5 bg-cobalt-tint">
-            <span class="w-2 h-2 rounded-full shrink-0 bg-cobalt"></span>
-            <p class="text-xs font-bold uppercase tracking-widest text-cobalt">Thread B — Expert</p>
-          </div>
-          <div class="p-5 space-y-3 text-sm text-slate-600">
-            <p>Use your <strong class="text-slate-800">own field of expertise</strong>.</p>
-            <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Apply 'Expertise Injection':</p>
-            <p class="text-xs text-slate-500 leading-relaxed">
-              Include <strong class="text-slate-700">3 specific elements</strong> unique to your discipline:
-            </p>
-            <ul class="space-y-1.5 text-xs text-slate-500">
-              <li class="flex gap-2.5 items-start">
-                <span class="step-num mt-px text-[.6rem]">1</span>
-                <span>A core theory from your field</span>
-              </li>
-              <li class="flex gap-2.5 items-start">
-                <span class="step-num mt-px text-[.6rem]">2</span>
-                <span>A specific methodology or framework</span>
-              </li>
-              <li class="flex gap-2.5 items-start">
-                <span class="step-num mt-px text-[.6rem]">3</span>
-                <span>A nuanced constraint (audience, ethics, epistemological stance)</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Peer challenge -->
-      <div class="bg-white border border-slate-200 rounded-lg px-5 py-4 flex gap-3 items-start">
-        <svg class="h-4 w-4 shrink-0 mt-0.5 text-slate-400" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M17 20h5v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2h5m6 0v-6m0 0a4 4 0 10-8 0m8 0H9"/>
-        </svg>
-        <p class="text-sm text-slate-600 leading-relaxed">
-          <strong class="text-slate-800">Peer Challenge:</strong> Swap your screen with a neighbour.
-          Can they identify which thread belongs to your actual expertise,
-          based solely on the <em>Visible Expertise</em> in the prompt?
-        </p>
-      </div>
-    </section>
-
-    <hr class="border-slate-200" />
-
-    <!-- ── 4. ACTIVITY 2: DRI ── -->
+    <!-- ── ACTIVITY ── -->
     <section>
       <div class="flex items-center gap-3 mb-1">
-        <span class="badge">DRI</span>
-        <h2 class="text-base font-bold text-slate-900">Activity 2 — Teach the confused chatbot</h2>
+        <span class="badge">VE + DRI</span>
+        <h2 class="text-base font-bold text-slate-900">Activity — Design Your Ideal Lecture</h2>
       </div>
-      <p class="text-xs text-slate-400 mb-1 pl-px">Directive Reasoning Interaction / Direct Redirect Iterate</p>
+      <p class="text-xs text-slate-400 mb-6 pl-px">Visible Expertise &amp; Directive Reasoning Interaction</p>
 
-      <!-- Objective -->
-      <div class="bg-cobalt-tint border border-cobalt-soft rounded-lg px-5 py-3.5 mb-6">
+      <!-- Goal banner -->
+      <div class="bg-cobalt-tint border border-cobalt-soft rounded-lg px-5 py-4 mb-6">
         <p class="text-sm text-slate-700 leading-relaxed">
-          <strong class="text-cobalt">Objective:</strong> Teach a 'resistant' AI a complex concept
-          in <strong class="text-slate-900">4 prompts or fewer</strong>.
+          <strong class="text-cobalt">Goal:</strong> Work with the AI to produce the
+          <strong class="text-slate-900">best possible lecture content</strong> on a topic of your choice —
+          in <strong class="text-slate-900">up to 5 prompts</strong>.
+          As you work, make your own knowledge visible (VE) and actively steer the AI's output (DRI).
         </p>
       </div>
 
-      <!-- Numbered instructions -->
-      <div class="bg-white border border-slate-200 rounded-lg px-5 py-5 mb-5 space-y-3">
-        <p class="text-xs font-bold uppercase tracking-[.15em] text-slate-400 mb-4">Instructions</p>
-        <div class="flex gap-3 items-start text-sm text-slate-600">
-          <span class="step-num shrink-0">1</span>
-          <span>Open a <strong class="text-slate-800">new chat thread</strong> in Duck.ai.</span>
+      <!-- Step 1: Choose your topic -->
+      <div class="bg-white border border-slate-200 rounded-lg overflow-hidden mb-4">
+        <div class="bg-slate-50 border-b border-slate-200 px-5 py-3">
+          <p class="text-xs font-bold uppercase tracking-[.15em] text-slate-500">
+            Step 1 — Choose your topic
+          </p>
         </div>
-        <div class="flex gap-3 items-start text-sm text-slate-600">
-          <span class="step-num shrink-0">2</span>
-          <span>Copy and paste the <strong class="text-slate-800">System Prompt</strong> below into the chat.</span>
+        <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+
+          <!-- Option A -->
+          <div class="p-5 space-y-2">
+            <div class="flex items-center gap-2.5 mb-3">
+              <span class="step-num text-[.65rem]">A</span>
+              <p class="text-sm font-semibold text-slate-800">A topic you know well</p>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Your academic field, a research area, or even a deep personal hobby.
+              The more genuine expertise you have, the more evidence of VE will show up naturally.
+            </p>
+          </div>
+
+          <!-- Option B -->
+          <div class="p-5 space-y-2">
+            <div class="flex items-center gap-2.5 mb-3">
+              <span class="step-num text-[.65rem]">B</span>
+              <p class="text-sm font-semibold text-slate-800">A topic you know little about</p>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              An unfamiliar subject — academic or otherwise.
+              Notice what happens to the quality and specificity of your prompts when you lack domain knowledge.
+            </p>
+          </div>
+
         </div>
-        <div class="flex gap-3 items-start text-sm text-slate-600">
-          <span class="step-num shrink-0">3</span>
-          <span>Follow the chatbot's instructions — it will guide you.</span>
-        </div>
-        <div class="flex gap-3 items-start text-sm text-slate-600">
-          <span class="step-num shrink-0">4</span>
-          <span><strong class="text-slate-800">Task:</strong> Follow the AI's lead and teach it about your 2 chosen expert topics.</span>
+        <div class="px-5 py-3 bg-slate-50 border-t border-slate-100">
+          <p class="text-xs text-slate-400">
+            <strong class="text-slate-500">Don't tell your neighbor which option you chose.</strong>
+            They will figure it out from your interaction log.
+          </p>
         </div>
       </div>
 
-      <!-- System Prompt copy box -->
+      <!-- Step 2: Run the interaction -->
+      <div class="bg-white border border-slate-200 rounded-lg px-5 py-5 mb-4 space-y-3">
+        <p class="text-xs font-bold uppercase tracking-[.15em] text-slate-400 mb-1">Step 2 — Run the interaction</p>
+        <div class="flex gap-3 items-start text-sm text-slate-600">
+          <span class="step-num shrink-0 text-[.65rem]">1</span>
+          <span>Open a new chat in Duck.ai. State your goal clearly in the first prompt.</span>
+        </div>
+        <div class="flex gap-3 items-start text-sm text-slate-600">
+          <span class="step-num shrink-0 text-[.65rem]">2</span>
+          <span>
+            With each follow-up, add specificity — inject your own knowledge, reject output that misses the mark,
+            and redirect the AI toward what you actually need.
+          </span>
+        </div>
+        <div class="flex gap-3 items-start text-sm text-slate-600">
+          <span class="step-num shrink-0 text-[.65rem]">3</span>
+          <span>
+            Stop at <strong class="text-slate-800">5 prompts</strong> (or earlier if you're happy with the result).
+          </span>
+        </div>
+      </div>
+
+      <!-- Step 3: Peer review -->
       <div class="bg-white border border-slate-200 rounded-lg overflow-hidden">
-        <div class="flex items-center justify-between px-5 py-3 bg-slate-50 border-b border-slate-200">
-          <p class="text-xs font-bold uppercase tracking-[.15em] text-slate-500">System Prompt</p>
-          <button id="copyBtn" type="button" onclick="copyPrompt()"
-            class="btn-copy no-print flex items-center gap-1.5 text-xs font-semibold
-                   px-3 py-1.5 rounded border transition-colors cursor-pointer select-none">
-            <svg id="copyIcon" class="h-3.5 w-3.5 shrink-0" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-            </svg>
-            <span id="copyLabel">Copy</span>
-          </button>
+        <div class="bg-slate-50 border-b border-slate-200 px-5 py-3">
+          <p class="text-xs font-bold uppercase tracking-[.15em] text-slate-500">
+            Step 3 — Swap &amp; review
+          </p>
         </div>
-        <pre id="systemPrompt"
-          class="px-5 py-5 text-sm font-mono text-slate-700 bg-white leading-relaxed whitespace-pre-wrap select-all">
-### ROLE: THE SKEPTICAL APPRENTICE
-You are a student who is eager but "confidently confused." You rely on oversimplifications and common myths.
-
-### OPERATIONAL CONSTRAINTS:
-1. TOPIC LIMIT: Focus on exactly ONE academic topic provided by the user.
-2. ATTEMPT COUNTER: You must track the interaction count. Start at 1. The limit is 4.
-3. MIRROR DEPTH: You possess NO external knowledge beyond what the user provides. If they are vague, stay confused.
-4. STUBBORNNESS: Do not accept a correction unless the user provides a "Diagnostic Explanation"—using specific terminology, mechanisms, or theoretical nuances.
-
-### PHASE 1: INITIALIZATION
-- Introduce yourself briefly. 
-- Ask the user for the ONE academic concept they wish to teach you today.
-- WAIT for their response.
-
-### PHASE 2: THE CHALLENGE (Prompts 1-4)
-- Once the topic is named, immediately propose a "Known Misunderstanding." (e.g., "Oh, isn't [Topic] just [Incorrect/Shallow Interpretation]?").
-- For every user response:
-  a) Increment your counter (e.g., "Attempt 2/4").
-  b) Misinterpret one technical detail the user provided.
-  c) If the user's explanation lacks "Visible Expertise" (VE), remain skeptical and ask for a deeper mechanism.
-  d) If you reach Prompt 4, do not ask another question. Move to Phase 3.
-
-### PHASE 3: FINAL ASSESSMENT (The DRIVE Report)
-After the 4th prompt, stop the roleplay. Provide a structured evaluation of the user's teaching performance based on the DRIVE framework:
-
-1. VISIBLE EXPERTISE (VE): Did the user inject specific, accurate terminology and mechanisms into the conversation? 
-2. DIRECTIVE REASONING (DRI): How effectively did the user diagnose your confusion and "steer" you back to the truth? [cite: 104]
-3. FINAL GRADE: Summarize if the "Apprentice" would have passed an exam based solely on the user's input.
-</div>
-
+        <div class="px-5 py-5">
+          <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+            Exchange your interaction log with your neighbor. As the reviewer, answer these three questions:
+          </p>
+          <div class="space-y-3">
+            <div class="flex gap-3 items-start">
+              <span class="step-num shrink-0 text-[.65rem]">1</span>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                <strong class="text-slate-900">Expert or not?</strong>
+                Based only on the prompts, does this person appear to know the topic well?
+                What is your evidence?
+              </p>
+            </div>
+            <div class="flex gap-3 items-start">
+              <span class="step-num shrink-0 text-[.65rem]">2</span>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                <strong class="text-slate-900">Where is the VE?</strong>
+                Can you spot moments where the prompter injected their own knowledge —
+                specific terms, constraints, or domain details the AI could not have introduced?
+              </p>
+            </div>
+            <div class="flex gap-3 items-start">
+              <span class="step-num shrink-0 text-[.65rem]">3</span>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                <strong class="text-slate-900">Where is the DRI?</strong>
+                Can you see the prompter steering the AI — refining, redirecting, or explicitly
+                accepting and rejecting output to move toward a better result?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <hr class="border-slate-200" />
@@ -309,10 +260,13 @@ After the 4th prompt, stop the roleplay. Provide a structured evaluation of the 
                 Visible<br/>Expertise
               </td>
               <td class="px-5 py-5 text-slate-600 leading-relaxed border-l border-slate-100">
-                Articulates knowledge clearly; uses precise, field-specific terminology.
+                Prompts contain knowledge that can only come from the prompter — field-specific
+                concepts, precise terminology, personal constraints, or disciplinary nuances
+                that the AI could not have introduced on its own.
               </td>
               <td class="px-5 py-5 text-slate-500 leading-relaxed border-l border-slate-100">
-                Vague; relies on generalities; accepts AI hallucinations as fact.
+                Prompts contain no personal knowledge; all content is AI-generated or generic.
+                The log could have been written by anyone, regardless of expertise.
               </td>
             </tr>
             <tr class="border-t border-slate-100 align-top">
@@ -321,10 +275,13 @@ After the 4th prompt, stop the roleplay. Provide a structured evaluation of the 
                 Directive<br/>Reasoning
               </td>
               <td class="px-5 py-5 text-slate-600 leading-relaxed border-l border-slate-100">
-                AI is steered via diagnostic feedback; student identifies and corrects errors.
+                The prompter actively shapes the conversation — adds detail to refine the output,
+                explicitly rejects responses that miss the mark, redirects the AI toward a
+                clearer goal, and builds iteratively toward the intended result.
               </td>
               <td class="px-5 py-5 text-slate-500 leading-relaxed border-l border-slate-100">
-                Passive; accepts confusion without correction; fails to adapt strategy.
+                The prompter follows the AI's lead rather than setting it. Output is accepted
+                as-is with little or no steering, correction, or purposeful iteration.
               </td>
             </tr>
           </tbody>
@@ -349,44 +306,6 @@ After the 4th prompt, stop the roleplay. Provide a structured evaluation of the 
     </div>
   </footer>
 
-  <!-- ══════════════ SCRIPT ══════════════ -->
-  <script>
-    function copyPrompt() {
-      const text = document.getElementById('systemPrompt').textContent.trim();
-      const btn  = document.getElementById('copyBtn');
-      const icon = document.getElementById('copyIcon');
-      const lbl  = document.getElementById('copyLabel');
-
-      const reset = () => {
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>';
-        lbl.textContent = 'Copy';
-        btn.classList.replace('btn-copied', 'btn-copy');
-      };
-
-      const success = () => {
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>';
-        lbl.textContent = 'Copied!';
-        btn.classList.replace('btn-copy', 'btn-copied');
-        setTimeout(reset, 2200);
-      };
-
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(text).then(success).catch(() => fallback(text, success));
-      } else {
-        fallback(text, success);
-      }
-    }
-
-    function fallback(text, callback) {
-      const ta = document.createElement('textarea');
-      ta.value = text;
-      ta.style.cssText = 'position:fixed;opacity:0;';
-      document.body.appendChild(ta);
-      ta.focus(); ta.select();
-      try { document.execCommand('copy'); callback(); } catch (e) {}
-      document.body.removeChild(ta);
-    }
-  </script>
 
 </body>
 </html>
